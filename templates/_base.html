@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Secret Stories{% endblock title %}</title>
+        <link rel = "stylesheet" href = "readpage.css">
+        <link rel= "preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Side Bar -->
+        <div class = "sidebar">
+            <div class = "iconbox">
+                <img src = "images/writeIcon.svg" alt = "write"/>
+            </div>
+            <div class = "iconbox">
+                <img src = "images/reading.svg" alt = "write"/>
+            </div>
+            <div class = "iconbox">
+                <img src = "images/account.svg" alt = "write"/>
+            </div>
+        </div>
+
+        <!-- Block Content -->
+        {% block content %}
+        {% endblock content %}
+
+
+        <!---------------- Scripts ---------------->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = ""></script>
+    </body>
+</html>
