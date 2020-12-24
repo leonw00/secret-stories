@@ -135,3 +135,5 @@ STATICFILES_FINDERS = [
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+LOGIN_REDIRECT_URL = 'home'

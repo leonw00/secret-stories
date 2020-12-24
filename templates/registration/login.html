@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block title %} Login Page {% endblock title %}
+{% block content %}
+<link rel = "stylesheet" href = "{% static 'css/account.css' %}">
+<div class = "mainbar">
+    <h2>LOGIN</h2>
+    <form method = "post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type = "submit">Log In</button>
+    </form>
+</div>
+{% endblock content %}
