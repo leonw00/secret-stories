@@ -15,7 +15,7 @@
                     <img src = "{% static 'images/writeIcon.svg' %}" alt = "write"/>
                 </div>
             </a>
-            <a href = "{% url 'reading' %}"></a>
+            <a href = "{% url 'reading' %}">
                 <div class = "iconbox">
                     <img src = "{% static 'images/reading.svg' %}" alt = "read"/>
                 </div>
@@ -24,6 +24,7 @@
                 <img src = "{% static 'images/account.svg' %}" alt = "account"/>
             </div>
         </div>
+
 
         <!-- Block Content -->
         {% block content %}
