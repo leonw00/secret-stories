@@ -84,7 +84,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'db',
-        'PORT': 5432
+        'PORT': 5432,
     }
 }
 
@@ -136,4 +136,5 @@ STATICFILES_FINDERS = [
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'accounts'
+LOGOUT_REDIRECT_URL = 'landing'

@@ -48,6 +48,7 @@
     {% else %}
         <h1>You are not logged in!</h1>
         <a href = "{% url 'login' %}"><h4>Login</h4></a>
+        <a href = "{% url 'signup' %}"><h4>Signup</h4></a>
     {% endif %}
 </div>
 {% endblock content %}
