@@ -1,8 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Secret Stories</title>
-        <link rel = "stylesheet" href = "css/landing.css">
+        <link rel = "stylesheet" href = "{% static 'css/landing.css'}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     </head>
@@ -106,6 +107,6 @@
 
         <!---------------- Scripts ---------------->
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src = "js/landing.js"></script>
+        <script src = "{% static 'javascript/landing.js' %}"></script>
     </body>
 </html>
