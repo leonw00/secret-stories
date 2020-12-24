@@ -1,8 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>{% block title %}Secret Stories{% endblock title %}</title>
-        <link rel = "stylesheet" href = "readpage.css">
+        <link rel = "stylesheet" href = "{% static 'css/base.css' %}">
         <link rel= "preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     </head>
@@ -10,13 +11,13 @@
         <!-- Side Bar -->
         <div class = "sidebar">
             <div class = "iconbox">
-                <img src = "images/writeIcon.svg" alt = "write"/>
+                <img src = "{% static 'images/writeIcon' %}" alt = "write"/>
             </div>
             <div class = "iconbox">
-                <img src = "images/reading.svg" alt = "write"/>
+                <img src = "{% static 'images/reading' %}" alt = "write"/>
             </div>
             <div class = "iconbox">
-                <img src = "images/account.svg" alt = "write"/>
+                <img src = "{% static 'images/account' %}" alt = "write"/>
             </div>
         </div>
 
