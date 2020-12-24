@@ -10,14 +10,18 @@
     <body>
         <!-- Side Bar -->
         <div class = "sidebar">
+            <a href = "{% url 'writing' %}">
+                <div class = "iconbox">
+                    <img src = "{% static 'images/writeIcon.svg' %}" alt = "write"/>
+                </div>
+            </a>
+            <a href = "{% url 'reading' %}"></a>
+                <div class = "iconbox">
+                    <img src = "{% static 'images/reading.svg' %}" alt = "read"/>
+                </div>
+            </a>
             <div class = "iconbox">
-                <img src = "{% static 'images/writeIcon' %}" alt = "write"/>
-            </div>
-            <div class = "iconbox">
-                <img src = "{% static 'images/reading' %}" alt = "write"/>
-            </div>
-            <div class = "iconbox">
-                <img src = "{% static 'images/account' %}" alt = "write"/>
+                <img src = "{% static 'images/account.svg' %}" alt = "account"/>
             </div>
         </div>
 

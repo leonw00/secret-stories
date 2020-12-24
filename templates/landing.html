@@ -4,7 +4,6 @@
     <head>
         <title>Secret Stories</title>
         <link rel = "stylesheet" href = "{% static 'css/landing.css' %}">
-        <link rel = "stylesheet" href = "{% static 'css/reading.css' %}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     </head>
@@ -15,7 +14,7 @@
         </div>
         <div class = "icondivs">
             <div class = "iconbox">
-                <a href = "writepage.html">
+                <a href = "{% url 'writing' %}">
                     <div class = "imagebox">
                         <img src = "{% static 'images/writeIcon.svg' %}" alt = "write">
                     </div>
@@ -26,7 +25,7 @@
                 </div>
             </div>
             <div class = "iconbox">
-                <a href = "readpage.html">
+                <a href = "{% url 'reading' %}">
                     <div class = "imagebox">
                         <img src = "{% static 'images/reading.svg' %}" alt = "write">
                     </div>
