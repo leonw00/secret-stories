@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>Secret Stories</title>
-        <link rel = "stylesheet" href = "{% static 'css/landing.css'}">
+        <link rel = "stylesheet" href = "{% static 'css/landing.css' %}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     </head>
@@ -16,7 +16,7 @@
             <div class = "iconbox">
                 <a href = "writepage.html">
                     <div class = "imagebox">
-                        <img src = "images/writeIcon.svg" alt = "write">
+                        <img src = "{% static 'images/writeIcon.svg' %}" alt = "write">
                     </div>
                 </a>
                 <div class = "description">
@@ -27,7 +27,7 @@
             <div class = "iconbox">
                 <a href = "readpage.html">
                     <div class = "imagebox">
-                        <img src = "images/reading.svg" alt = "write">
+                        <img src = "{% static 'images/reading.svg' %}" alt = "write">
                     </div>
                 </a>
                 <div class = "description">
@@ -38,7 +38,7 @@
             <div class = "iconbox">
                 <a href = "accountpage.html">
                     <div class = "imagebox">
-                        <img src = "images/account.svg" alt = "write">
+                        <img src = "{% static 'images/account.svg' %}" alt = "write">
                     </div>
                 </a>
                 <div class = "description">
@@ -58,7 +58,7 @@
                                 This is a website where you could share story anonymously for the people on the internet to see!
                             </p>
                         </div>
-                        <img class = "arrow" src = "images/arrow.svg" alt = "arrow"/>
+                        <img class = "arrow" src = "{% static 'images/arrow.svg' %}" alt = "arrow"/>
                     </div>
                     <div class = "questionbox">
                         <button class = "collapsible">Can I post a story immediately?</button>
@@ -67,7 +67,7 @@
                                 Absolutely! You don't have to have an account to share a story! Just go directly to the <a>write</a> page and you're good to go!
                             </p>
                         </div> 
-                        <img class = "arrow" src = "images/arrow.svg" alt = "arrow"/>
+                        <img class = "arrow" src = "{% static 'images/arrow.svg' %}" alt = "arrow"/>
                     </div>
                 </div>
                 <div class = "singlecontainer">
@@ -78,7 +78,7 @@
                                 You can share anything you want! You can share funny stories, inner feelings, deepest darkest secrets and you can even vent out your emotions here! No one is going to judge you at all here. 
                             </p>
                         </div> 
-                        <img class = "arrow" src = "images/arrow.svg" alt = "arrow"/>
+                        <img class = "arrow" src = "{% static 'images/arrow.svg' %}" alt = "arrow"/>
                     </div>
                     <div class = "questionbox">    
                         <button class = "collapsible">Why is there an account page? Isn't it anonymous?</button>
@@ -87,7 +87,7 @@
                                 The account page allows the user to save and delete stories they have shared. There's even an option of sharing your story in any name you'd like!
                             </p>
                         </div>   
-                        <img class = "arrow" src = "images/arrow.svg" alt = "arrow"/>       
+                        <img class = "arrow" src = "{% static 'images/arrow.svg' %}" alt = "arrow"/>       
                     </div>
                     <div class = "questionbox">    
                         <button class = "collapsible">Can I comment on someone's story?</button>
@@ -96,7 +96,7 @@
                                 Unfortunately, the comment option is unavailable here since we would for the story sharer to have a sense of anonimity. No one can judge your story for what it is. 
                             </p>
                         </div>   
-                        <img class = "arrow" src = "images/arrow.svg" alt = "arrow"/>       
+                        <img class = "arrow" src = "{% static 'images/arrow.svg' %}" alt = "arrow"/>       
                     </div>
                 </div>
             </div>
