@@ -4,7 +4,7 @@
     width: 100%;
     flex: 12;
     padding-top: 60px;
-    margin-left: 140px;
+    margin-left: 180px;
     font-size: 2.8rem;
     overflow-x: hidden;
     display: flex;
@@ -62,4 +62,12 @@
     font-size: 10rem;
     height: 15px;
     color: rgba(255,255,255,0.5);
+}
+
+/* Links */
+
+.registration{
+    margin-top: 100px;
+    background-color: red;
+    font-size: 1000px;
 }

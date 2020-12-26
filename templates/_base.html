@@ -25,6 +25,13 @@
                     <img src = "{% static 'images/account.svg' %}" alt = "account"/>
                 </div>
             </a>
+            {% if user.is_authenticated %}
+            <a href = "{% url 'logout' %}">
+                <div class = "iconbox">
+                    <img src = "{% static 'images/exit.svg' %}" alt = "logout"/>
+                </div>
+            </a>
+            {% endif %}
         </div>
 
 
