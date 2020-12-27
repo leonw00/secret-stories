@@ -8,9 +8,9 @@ class Story(models.Model):
         default = uuid.uuid4,
         editable = False,
     )
-    title = models.CharField(max_length = 140)
-    author = models.CharField(max_length = 140)
-    content = models.TextField()
+    title = models.CharField(verbose_name = (''), max_length = 140)
+    content = models.TextField(verbose_name = (''), )
+    author = models.ForeginKey()
     date = models.DateTimeField(auto_now_add = True)
 
     def __str__(self):

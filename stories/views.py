@@ -13,4 +13,5 @@ class StoryDetailView(DetailView):
 class StoryCreateView(CreateView):
     model = Story
     template_name = 'writing.html'
-    fields = ('title', 'content', 'author')
+    fields = ('title', 'content')
+    

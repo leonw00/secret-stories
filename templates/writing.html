@@ -6,11 +6,8 @@
 <div class = "mainbar">
     <form action = "" method = "post">
         {% csrf_token %}
-        <div class = "titleblock">
-            <input type = "text">
-        </div>
-        <textarea></textarea>
-        <button type = "submit">SHARE</button>
+        {{ form.as_p }}
+        <button type = "submit" class = "submit">SHARE</button>
     </form>
 </div>
 {% endblock content %}
