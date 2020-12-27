@@ -4,15 +4,13 @@
 {% block content %}
 <link rel = "stylesheet" href = "{% static 'css/writing.css' %}">
 <div class = "mainbar">
-    <div class = "titleblock">
-        <input type = "text">
-    </div>
-    <form class = "bodyblock">
+    <form action = "" method = "post">
+        {% csrf_token %}
+        <div class = "titleblock">
+            <input type = "text">
+        </div>
         <textarea></textarea>
+        <button type = "submit">SHARE</button>
     </form>
-    <div class = "buttonblock">
-        <input type = "submit" value = "RESET">
-        <input type = "submit" value = "SHARE">
-    </div>
 </div>
 {% endblock content %}

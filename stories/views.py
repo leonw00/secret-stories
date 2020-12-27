@@ -1,4 +1,4 @@
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from .models import Story
 
 class StoryListView(ListView):
@@ -9,3 +9,8 @@ class StoryListView(ListView):
 class StoryDetailView(DetailView):
     model = Story
     template_name = 'story/story_detail.html'
+
+class StoryCreateView(CreateView):
+    model = Story
+    template_name = 'writing.html'
+    fields = ('title', 'content', 'author')

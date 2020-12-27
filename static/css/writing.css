@@ -67,3 +67,8 @@
     padding: 10px 30px;
     cursor: pointer;
 }
+
+form p{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,7 +1,13 @@
+import uuid
 from django.db import models
 from django.urls import reverse
 
 class Story(models.Model):
+    id = models.UUIDField(
+        primary_key = True,
+        default = uuid.uuid4,
+        editable = False,
+    )
     title = models.CharField(max_length = 140)
     author = models.CharField(max_length = 140)
     content = models.TextField()
