@@ -10,7 +10,6 @@
     overflow-x: hidden;
 }
 
-
 .storiescontainer{
     height: 100%;
     width: 100%;
@@ -34,6 +33,15 @@
     padding: 0 30px;
     margin: 50px 40px;
     position: relative;
+}
+
+.storiescontainer a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .storybox h4{

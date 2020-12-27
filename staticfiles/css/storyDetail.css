@@ -1,0 +1,54 @@
+
+.mainbar{
+    height: 100%;
+    width: 100%;
+    flex: 12;
+    padding: 60px 30px;
+    margin-left: 140px;
+    font-size: 2.8rem;
+    overflow-x: hidden;
+}
+
+.storycontainer{
+    height: 90%;
+    width: 100% - 140px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(60, 39, 39, 0.72);
+    border-radius: 2%;
+    margin-left: 40px;
+    margin-right: 50px;
+    padding: 0 50px;
+    white-space: pre-line;
+    position: relative;
+}
+
+.storycontainer h1{
+    font-size: 4rem;
+    margin-top: 10px;
+}
+
+.storycontainer p{
+    font-size: 1.2rem;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.infobox{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.infobox p{
+    background-color: rgba(196,196,196,0.8);
+    font-size: 1rem;
+    color: black;
+    padding: 0 30px;
+    border-radius: 10px;
+}

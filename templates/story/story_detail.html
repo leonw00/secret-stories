@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block title %} {{ object.title }} {% endblock title %}
+{% block content %}
+<link rel = "stylesheet" href = "{% static 'css/storyDetail.css' %}">
+<div class = "mainbar">
+    <div class = "mainbar">
+        <div class = "storycontainer">
+            <h1>{{object.title}}</h1>
+            <p>{{object.content}}
+            </p>
+            <div class = "infobox">
+                <p>{{object.author}} | {{object.date}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

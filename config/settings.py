@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     #locals
     'accounts',
     'pages',
+    'stories',
 ]
 
 MIDDLEWARE = [

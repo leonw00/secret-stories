@@ -6,97 +6,17 @@
 <div class = "mainbar">
     <h1>Secret Stories</h1>
     <div class = "storiescontainer">
-        <div class = "storybox">
-            <h4>Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
+        {% for story in stories %}
+        <div class = "storybox" >
+            <a href = "{{ story.get_absolute_url }}">
+            <h4>{{ story.title }}</h4>
+            <p>{{ story.content|slice:":450" }}</p>
             <div class = "infobox">
-                <p>Anonymous | 2020-09-11 13:22:10</p>
+                <p>{{ story.author }} | {{ story.date }}</p>
             </div>
+            </a>
         </div>
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>J. cole Debrosnekin Leroyzin | 2020-09-11 13:22:10</p>
-            </div>
-        </div>   
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>J. cole Debrosnekin Leroyzin | 2020-09-11 13:22:10</p>
-            </div>
-        </div>  
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>rumples | 2020-09-11 13:22:10</p>
-            </div>
-        </div>  
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>Anonymous | 2020-09-11 13:22:10</p>
-            </div>
-        </div>      
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>rumples | 2020-09-11 13:22:10</p>
-            </div>
-        </div>  
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>Anonymous | 2020-09-11 13:22:10</p>
-            </div>
-        </div>  
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>rumples | 2020-09-11 13:22:10</p>
-            </div>
-        </div>  
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>Anonymous | 2020-09-11 13:22:10</p>
-            </div>
-        </div>  
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>rumples | 2020-09-11 13:22:10</p>
-            </div>
-        </div>  
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>Anonymous | 2020-09-11 13:22:10</p>
-            </div>
-        </div>  
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>rumples | 2020-09-11 13:22:10</p>
-            </div>
-        </div>  
-        <div class = "storybox">
-            <h4>Long very long wow long Title of Story</h4>
-            <p>The main page of the story, there will be a huge amount of text in here. Hello Stranger, If you’re reading this, then you’re in luck! I’m here to say that you should have a wonderful day! a wonderful life! a wonderful evening! and basically, wonderful everything!!! I want to say my hopes and dreams that I want to be the very best, that no one ever wass, to catch them all, is my real test. I want to travel around the world, looking, ...  </p>
-            <div class = "infobox">
-                <p>Anonymous | 2020-09-11 13:22:10</p>
-            </div>
-        </div>      
+        {% endfor %}   
     </div>
 </div>
 {% endblock content %}
