@@ -8,8 +8,15 @@ services:
    - .:/code
   ports:
    - 8000:8000
+  depends_on:
+   - db
+  environment:
+   - "DJANGO_SECRET_KEY=o=0^+(=_8_ul$a5#3ad3fh%h744h%-2izgjt!snjs&hi+6zyji"
+   - "DJANGO_DEBUG=True"
  db:
   image: postgres:11
+  volumes:
+    - postgres_data:/var/lib/postgresql/data/
   environment:
    - "POSTGRES_HOST_AUTH_METHOD=trust"
 
