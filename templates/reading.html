@@ -9,11 +9,11 @@
         {% for story in stories %}
         <div class = "storybox" >
             <a href = "{{ story.get_absolute_url }}">
-            <h4>{{ story.title|slice:":30" }}</h4>
-            <p>{{ story.content|slice:":400" }}</p>
-            <div class = "infobox">
-                <p><i>Anonymous</i> | {{ story.date }}</p>
-            </div>
+                <h4>{{ story.title|slice:":30" }}</h4>
+                <p>{{ story.content|slice:":400" }}</p>
+                <div class = "infobox">
+                    <p>Anonymous | {{ story.date }}</p>
+                </div>
             </a>
         </div>
         {% endfor %}   

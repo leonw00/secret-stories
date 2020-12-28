@@ -1,7 +1,6 @@
 from django.urls import path
-from .views import LandingPageView, AccountPageView
+from .views import LandingPageView
 
 urlpatterns = [
     path('', LandingPageView.as_view(), name = 'landing'),
-    path('accounts/', AccountPageView.as_view(), name = 'accounts'),
 ]   
