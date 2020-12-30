@@ -1,0 +1,224 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: rgb(9,9,9);
+    background: linear-gradient(180deg, rgba(9,9,9,1) 0%, rgba(2,19,41,1) 39%, rgba(4,11,94,1) 100%);
+    background-attachment: fixed;
+}
+
+body{
+    color: white;
+}
+
+/*******************************/
+/********** Title  *************/
+/*******************************/
+
+.titlePage{
+    margin: 20vh 10vh;
+}
+
+.titleText{
+    font-size: 7rem;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2.2s steps(40) 0.5s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+    margin-bottom: 20px;
+}
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 950px;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+
+.additionText{
+    font-size: 2rem;
+    animation: fadeIn ease 5.7s ;
+    margin-bottom: 45vh;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity:0;}
+    100% {opacity:1;}
+}
+
+/**********************************/
+/********** Icon Divs *************/
+/**********************************/
+
+.icondivs{
+    margin-top: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.iconbox{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5%;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.iconbox a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imagebox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #0f0f0f;
+    border-radius: 5% 5% 0 0;
+    border: 1px solid black;
+    padding: 30px 0;
+}
+
+.iconbox img{
+    width: 250px;
+    height: 250px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.description h2{
+    margin: 10px;
+}
+
+
+/**********************************/
+/********** Questions *************/
+/**********************************/
+
+.questioncontainer{
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 400px 0 550px;
+    font-size: 2rem;
+}
+
+.fullcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 75px;
+}
+
+.singlecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+.questionbox{
+    width: 90%;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.arrow{
+    position: absolute;
+    right: 30px;
+    top: 22px;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease-out;
+}
+
+.arrowactive{
+    transform: rotate(-180deg);
+    transition: transform 0.2s ease-out;
+}
+
+.collapsible{
+    background-color: rgba(60, 39, 39, 0.72);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.72);
+    padding: 18px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.collapsible:hover{
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 10px rgba(120, 99, 129, 0.32);
+}
+
+.colactive{
+    color: rgba(255, 255, 255, 1);
+}
+
+.colcontent{
+    border-radius: 0 0 5px 5px;
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+    box-shadow: 0 5px 10px rgba(120, 99, 129, 0.32);
+    outline: none;
+    background-color: #f1f1f1c2;
+    color: black;
+    font-size: 1rem;
+}
+
+.colcontent p{
+    margin: 12px 0 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/*******************************/
+/********** footer *************/
+/*******************************/
+
+.footer{
+    margin-top: 30vh;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
