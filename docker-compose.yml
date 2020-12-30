@@ -12,13 +12,11 @@ services:
    - db
   environment:
    - "DJANGO_SECRET_KEY=49yrgfpE_woaNb9QF5Dsm1coCAnu5a4Pbd1GyNGl1Cb3UXErtwg"
-  links:
-    - db:db
   
  db:
   image: postgres:11
   volumes:
-    - postgres_data:HEROKU_POSTGRESQL_SILVER_URL
+    - postgres_data:/var/lib/postgresql/data/
   environment:
    - "POSTGRES_HOST_AUTH_METHOD=trust"
 
