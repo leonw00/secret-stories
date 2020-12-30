@@ -22,7 +22,7 @@ services:
   db:
     image: postgres:11
     volumes:
-      - postgres_data:postgres://zmcuypezrsvuwx:dccb9a8e7f850931bda876f1177efd4fc522fd020d632b842c3bf7a060890ce3@ec2-3-232-240-231.compute-1.amazonaws.com:5432/d7qan7i3j5lf9s
+      - postgres_data:/var/lib/postgresql/data/
     environment:
       - "POSTGRES_HOST_AUTH_METHOD=trust"
 
